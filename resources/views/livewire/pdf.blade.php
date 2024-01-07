@@ -5,21 +5,38 @@
     <title>Generated PDF</title>
 
     <style>
-        .{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
         }
-        .header-heading,.footer-heading{
+
+        @page {
+            margin: 0.5cm 2cm; 
+        }
+
+        .header-heading, {
             text-align: center;
-            padding: 15px 0px;
         }
-        .textarea{
-            padding: 0px 20px;
+        
+        .footer-heading {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px; 
+            text-align: center;
+        }
+
+        .textarea {
+            margin: 15px 0px;
+            text-align: justify;
+            font-size: 12px !important;
+
         }
     </style>
 </head>
 <body>
+
     <div class="header-heading">
         <p>{{ $header }}</p>
     </div>
@@ -30,8 +47,12 @@
         @endforeach
     </div>
 
-    <div>
-        <p class="footer-heading">{{ $footer }}</p>
+    <div class="footer-heading">
+            <p>{{ $footer }}</p>
     </div>
+
+ 
 </body>
 </html>
+
+

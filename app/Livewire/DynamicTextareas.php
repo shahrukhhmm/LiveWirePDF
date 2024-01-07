@@ -45,4 +45,6 @@ class DynamicTextareas extends Component
     {
         return view('livewire.dynamic-textareas');
     }
+
+    
 }
