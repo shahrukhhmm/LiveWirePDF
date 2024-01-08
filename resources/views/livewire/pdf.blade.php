@@ -38,17 +38,17 @@
 <body>
 
     <div class="header-heading">
-        <p>{{ $header }}</p>
+        <p>{!! $header !!}</p>
     </div>
 
     <div>
         @foreach($middleTextareas as $textarea)
-            <p class="textarea">{{ $textarea }}</p>
+            <p class="textarea">{!! $textarea !!}</p>
         @endforeach
     </div>
 
     <div class="footer-heading">
-            <p>{{ $footer }}</p>
+            <p>{!! $footer !!}</p>
     </div>
 
  

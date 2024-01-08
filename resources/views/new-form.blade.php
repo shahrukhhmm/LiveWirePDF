@@ -17,11 +17,7 @@
             box-sizing: border-box;
         }
 
-        .heading{
-            padding: 18px 10px;
-            color: #484848;
-        }
-        
+
         textarea{
             margin: 15px 0px;
         }
@@ -34,7 +30,11 @@
             justify-content: center;
             align-items: center;
         }
-   
+        .heading{
+            padding: 18px 10px;
+            color: #484848;
+        }
+      
         #header,#footer, #mTextArea{
            text-align: center;
            padding: 20px 0px;
@@ -53,7 +53,6 @@
             padding: 2px 8px;
             cursor: pointer;
             border-radius: 4px;
-            transition: background 0.3s ease, color 0.3s ease;
         }
 
         .removeBtn:hover {
@@ -72,7 +71,7 @@
             border-radius: 5px;
        }
        .addContainer button{
-        
+         
             text-transform: uppercase;
             padding: 0px 22px;
             
@@ -88,17 +87,13 @@
             background-color: #ffffff;
             border-color: #0b5ed7;
        }
- 
+     
     </style>
 </head>
-<body class="antialiased">
-    <livewire:dynamic-textareas />
-    <script src="{{ asset('js/app.js') }}" defer></script>
+
+<body >
+    <livewire:new-dynamic-textarea />
     @livewireScripts
-
-
-
-
 
 </body>
 </html>

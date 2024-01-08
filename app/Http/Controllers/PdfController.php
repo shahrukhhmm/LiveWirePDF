@@ -13,7 +13,7 @@ class PdfController extends Controller
         $data = $request->all();
         
         $pdf = Pdf::setOption(['isHtmlParserEnabled' => true, 'isRemoteEnabled' => true, 'defaultFont' => 'sans-serif'])
-        ->loadView('livewire.pdf', $data) 
+        ->loadHtml(view('livewire.pdf', $data)->render())
         ->setPaper('A4', 'portrait');
 
         $filename = 'generated_pdf';

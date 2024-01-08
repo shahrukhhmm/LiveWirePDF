@@ -19,3 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/download-pdf', [PdfController::class, 'generateAndDownloadPdf'])->name('download-pdf');
+
+
+Route::get('/new-form', function () {
+    return view('new-form');
+});
